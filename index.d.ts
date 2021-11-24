@@ -1,27 +1,28 @@
-declare module "react-native-haptic-feedback" {
-  type HapticFeedbackTypes =
-    | "selection"
-    | "impactLight"
-    | "impactMedium"
-    | "impactHeavy"
-    | "rigid"
-    | "soft"
-    | "notificationSuccess"
-    | "notificationWarning"
-    | "notificationError"
-    | "clockTick"
-    | "contextClick"
-    | "keyboardPress"
-    | "keyboardRelease"
-    | "keyboardTap"
-    | "longPress"
-    | "textHandleMove"
-    | "virtualKey"
-    | "virtualKeyRelease"
-    | "effectClick"
-    | "effectDoubleClick"
-    | "effectHeavyClick"
-    | "effectTick";
+declare module "@gennadysx/react-native-haptic-feedback" {
+export  enum HapticFeedbackTypes {
+  selection = "selection",
+  impactLight = 'impactLight',
+  impactMedium=  "impactMedium",
+  impactHeavy=  "impactHeavy",
+  rigid=  "rigid",
+  soft ="soft",
+  notificationSuccess = "notificationSuccess",
+  notificationWarning ="notificationWarning",
+  notificationError ="notificationError",
+  clockTick ="clockTick",
+  contextClick = "contextClick",
+  keyboardPress ="keyboardPress",
+  keyboardRelease ="keyboardRelease",
+  keyboardTap ="keyboardTap",
+  longPress ="longPress",
+  textHandleMove ="textHandleMove",
+  virtualKey ="virtualKey",
+  virtualKeyRelease ="virtualKeyRelease",
+  effectClick = "effectClick",
+  effectDoubleClick = "effectDoubleClick",
+  effectHeavyClick = "effectHeavyClick",
+  effectTick = "effectTick"
+  }
 
   interface HapticOptions {
     enableVibrateFallback?: boolean;
